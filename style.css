@@ -55,6 +55,7 @@ header nav a {
 
 /* Main */
 main {
+  gap: 24px;
   margin-top: 72px;
   display: grid;
   grid-template-columns:
@@ -92,9 +93,40 @@ section#featured-new h1 {
   margin-top: 16px;
 }
 
+/* News Sidebar */
+
 section#news-sidebar {
   grid-area: newsSidebar;
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+  padding: 16px;
 }
+
+#news-sidebar .new-item:not(:last-child) {
+  border-bottom: 1px solid #999;
+  padding-bottom: 16px;
+}
+#news-sidebar .new-item:not(:nth-child(2)) {
+  padding-top: 16px;
+}
+
+#news-sidebar h2 {
+  color: var(--soft-orange);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+#news-sidebar h3 {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+#news-sidebar p {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
 section#news-bottom {
   grid-area: newsBottom;
 }
